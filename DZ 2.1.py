@@ -1,0 +1,5 @@
+user_input = int(input("Enter 4-digit number: "))
+print(user_input // 1000)
+print(user_input // 100 % 10)
+print(user_input // 10 % 10)
+print(user_input % 10)
