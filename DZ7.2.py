@@ -2,7 +2,7 @@ text = input("Please enter a text: ")
 def correct_sentence(text):
     a = text[0]
     b = text[-1]
-    if a.isupper() == False:
+    if not a.isupper():
         text = a.upper() + text[1:]
     if b != ".":
         text += "."
