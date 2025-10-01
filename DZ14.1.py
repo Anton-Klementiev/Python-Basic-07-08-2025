@@ -63,3 +63,9 @@ gr.delete_student('Taylor')
 print(gr)  # Only one student
 
 gr.delete_student('Taylor')  # No error!
+
+for i in range(10):
+    try:
+        gr.add_student(Student(i,i,i,i,i))
+    except Error:
+        print(Error())
