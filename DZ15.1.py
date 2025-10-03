@@ -12,11 +12,13 @@ class Rectangle:
 
     def __add__(self, other):
         new = self.get_square() + other.get_square()
-        return Rectangle(new, 1)
+        new_width = self.width
+        return Rectangle(new_width, new / new_width)
 
     def __mul__(self, n):
         new= self.get_square() * n
-        return Rectangle(new, 1)
+        new_width = self.width
+        return Rectangle(new_width, new / new_width)
 
     def __str__(self):
         return f'Rectangle({self.width}, {self.height})'
